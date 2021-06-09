@@ -1,0 +1,31 @@
+.navigation {
+  font-size: 2.5rem;
+  margin-left: 11%;
+  -webkit-animation: moveInRight 1.5s ease-out;
+          animation: moveInRight 1.5s ease-out;
+}
+
+.nav-link {
+  color: white;
+  margin-top: 1rem;
+  margin-right: 5.5rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.nav-link:hover {
+  color: #3ec7d1;
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.navbar-toggler-icon {
+  width: 3rem !important;
+  height: 3rem !important;
+  margin-right: 4rem !important;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+/*# sourceMappingURL=navigation.css.map */

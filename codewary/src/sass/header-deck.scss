@@ -1,0 +1,145 @@
+$button-bg: #3ec7d1;
+$button-anim: #016970;
+$bgColor: #302b63;
+
+.header {
+  background-color: #302b63;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  &__title {
+    animation: moveInRight 1s ease-out;
+  }
+  &__text {
+    margin-left: -8% !important;
+    margin-top: 1%;
+    &__primary {
+      font-size: 6rem !important;
+      color: white !important;
+      animation: moveInLeft 1.5s ease-out;
+      & p {
+        margin-top: -2%;
+      }
+    }
+    &__sub {
+      color: white;
+      font-size: 2rem;
+      animation: moveInRight 1s ease-out;
+    }
+    &__btn-cta {
+      animation: moveInRight 1s ease-out;
+      color: white;
+      padding: 1.5rem;
+      font-size: 2.25rem;
+      background-color: $button-bg;
+      border-radius: 1rem;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      margin-top: 4.5%;
+      position: relative;
+      transition: 0.4s;
+      &:hover {
+        transform: translateY(0.3rem);
+        background-color: $button-anim;
+      }
+    }
+  }
+}
+.header-animation {
+  animation: moveInRight 1s ease-out;
+}
+.card-header {
+  width: 110%;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+//media queries
+@media only screen and (max-width: 1199px) {
+  .header {
+    &__text {
+      margin-left: 1% !important;
+      &__primary {
+        font-size: 4rem !important;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 937px) {
+  .header {
+    &__text {
+      margin-left: 1% !important;
+      &__primary {
+        font-size: 4rem !important;
+      }
+      &__sub {
+        font-size: 1.3rem;
+      }
+      &__btn-cta {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 575px) {
+  .header {
+    &__text {
+      margin-left: -7% !important;
+      &__primary {
+        font-size: 4rem !important;
+      }
+      &__sub {
+        font-size: 1.3rem;
+      }
+      &__btn-cta {
+        font-size: 1.4rem;
+      }
+    }
+  }
+  .services {
+    margin-top: -2.8%;
+    margin-bottom: -2rem;
+  }
+  .about {
+    margin-top: -2.5%;
+    margin-bottom: -2rem;
+  }
+  .footer {
+    margin-top: -4.25%;
+  }
+  .header {
+    margin-bottom: -2rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .card-body {
+    margin-left: -3.5%;
+  }
+}

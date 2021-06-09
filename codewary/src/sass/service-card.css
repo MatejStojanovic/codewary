@@ -1,0 +1,84 @@
+.card-deck {
+  margin-top: 5rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.card {
+  border-radius: 1.25rem !important;
+  border: none !important;
+  margin-left: 15% !important;
+  background-color: transparent !important;
+  -webkit-transform: translateY(0rem);
+          transform: translateY(0rem);
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.card-title {
+  color: black;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  font-size: 2.4rem;
+  text-align: left;
+}
+
+.card-text {
+  color: black;
+  margin-top: 1rem;
+  font-size: 1.6rem;
+}
+
+.card-img {
+  width: 70% !important;
+  height: 70% !important;
+  -ms-flex-negative: 1 !important;
+      flex-shrink: 1 !important;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.services {
+  background-color: #3ec7d1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.services__title {
+  font-size: 6rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 4rem;
+}
+
+.card-services:hover {
+  background-color: #302b63 !important;
+  color: white !important;
+  cursor: pointer;
+  -webkit-transform: translateY(-3rem);
+          transform: translateY(-3rem);
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.card-services:hover .card-text {
+  color: white;
+}
+
+.card-services:hover .card-title {
+  color: white;
+}
+
+.card::after {
+  animation-direction: reverse;
+}
+
+@media only screen and (max-width: 991px) {
+  .card-title {
+    margin-top: -2.25rem;
+  }
+}
+/*# sourceMappingURL=service-card.css.map */

@@ -1,0 +1,85 @@
+$button-bg: #3ec7d1;
+$button-anim: #016970;
+.about-us {
+  background-color: #302b63;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  &__title {
+    font-size: 6rem;
+    text-align: center;
+    margin-bottom: 3%;
+    margin-top: 2.5%;
+    color: white;
+  }
+  &__text {
+    font-size: 1.8rem;
+    text-align: left;
+    color: white;
+    white-space: inherit;
+    font-family: inherit;
+    margin-top: -4%;
+  }
+  &__text2 {
+    line-height: 2.75rem;
+  }
+  &__animation {
+    text-align: center;
+    margin-left: 4%;
+  }
+  &__button {
+    color: white;
+    padding: 1.5rem;
+    font-size: 2.25rem;
+    background-color: #3ec7d1;
+    border-radius: 1rem;
+    border: none;
+    text-decoration: none;
+    margin-top: 4%;
+    transition: 0.4s;
+    &:hover {
+      transform: translateY(0.3rem);
+      background-color: $button-anim;
+    }
+  }
+}
+
+//media queries
+
+@media only screen and (max-width: 1186px) {
+  .about-us {
+    &__button {
+      margin-bottom: 18%;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about-us {
+    &__text {
+      margin-top: -12.5%;
+    }
+  }
+}
+@media only screen and (max-width: 1414px) {
+  .about-us {
+    &__button {
+      margin-bottom: 28%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .about-us {
+    &__button {
+      margin-bottom: 18%;
+    }
+  }
+}
+@media only screen and (max-width: 991px) {
+  .about-us {
+    &__text {
+      margin-top: -12.5%;
+    }
+  }
+}

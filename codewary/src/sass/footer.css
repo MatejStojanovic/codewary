@@ -1,0 +1,19 @@
+.footer {
+  background: #3ec7d1;
+  color: white;
+  font-size: 1.5rem;
+  margin-top: -1.6%;
+}
+
+.footer__links:hover {
+  cursor: pointer;
+}
+
+.footer__links p:hover {
+  color: #302b63;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+/*# sourceMappingURL=footer.css.map */
